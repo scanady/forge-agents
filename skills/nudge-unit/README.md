@@ -1,1 +1,0 @@
-Apply nudge theory to influence people to purchase life insurance from the AARP Life Insurance program by New York Life (https://www.nylaarp.com/). These are people that are are 40-80 years old and eligible for the program. They may not be existing AARP members and may need a nudge to join and purchase life insurance.
