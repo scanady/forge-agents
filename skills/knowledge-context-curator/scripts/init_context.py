@@ -92,10 +92,11 @@ def init_context(project_root: Path, context_dir: str) -> None:
     log_path = context_root / "log.md"
     if log_path.exists():
         text = log_path.read_text(encoding="utf-8")
-        init_line = f"## [{today}] initialize | Created context repository"
-        if init_line not in text:
+        init_line = f"## {today}"
+        init_entry = f"* **Initialization**: Created context repository."
+        if init_entry not in text:
             with log_path.open("a", encoding="utf-8") as handle:
-                handle.write(f"\n{init_line}\n")
+                handle.write(f"\n{init_line}\n{init_entry}\n")
 
     if created:
         print("Created:")
