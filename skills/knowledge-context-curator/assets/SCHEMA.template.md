@@ -2,7 +2,7 @@
 
 This file is the configuration for this context repository. It documents repository conventions, page types, agent-managed context-pack rules, tag taxonomy, and workflow customizations. Agents read this first when entering the repository, and its conventions override the defaults documented in the `knowledge-context-curator` skill.
 
-This repository conforms to the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification. Every concept document has parseable YAML frontmatter with a non-empty `type` field. Cross-references use standard markdown links. Index and log files follow OKF §6 and §7 conventions.
+This repository conforms to the [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification. Every concept document has parseable YAML frontmatter with a non-empty `type` field. Cross-references use standard markdown links. Index and log files follow OKF §6 and §7 conventions.
 
 This file is co-evolved with the user when human judgment is needed. The agent may update repository mechanics when patterns appear, but should ask before changing conventions that affect meaning, source authority, retention, deletion, or user-visible scope.
 
@@ -17,7 +17,7 @@ This project may host additional context roots (for example `context-core/`, `co
 
 ## OKF Conformance
 
-This repository follows OKF v0.1. Key conformance rules:
+This repository follows OKF. Key conformance rules:
 
 - Every `.md` file (except `index.md` and `log.md`) has YAML frontmatter with a non-empty `type` field.
 - Cross-references use standard markdown links: `[title](/path/to/concept.md)` (bundle-relative, starting with `/`) or `[title](./relative.md)`.

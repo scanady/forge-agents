@@ -1,6 +1,6 @@
 # OKF Alignment
 
-This reference documents how this skill's context repositories align with the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification.
+This reference documents how this skill's context repositories align with the [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification.
 
 ## What Is OKF
 
@@ -8,7 +8,7 @@ OKF is a vendor-neutral, open specification for representing structured knowledg
 
 ## Conformance Requirements
 
-A bundle conforms to OKF v0.1 if:
+A bundle conforms to OKF if:
 
 1. Every non-reserved `.md` file contains a parseable YAML frontmatter block.
 2. Every frontmatter block contains a non-empty `type` field.
@@ -49,18 +49,6 @@ Per OKF §3.1, these filenames have defined meaning and must not be used for con
 - `log.md` — chronological update history
 
 This skill also reserves `SCHEMA.md` as the repository's governance configuration file. It is not an OKF-defined reserved file but is treated specially by the skill's tooling.
-
-## Versioning
-
-Repositories may optionally declare their OKF version in the root `index.md` frontmatter:
-
-```yaml
----
-okf_version: "0.1"
----
-```
-
-This is the only case where `index.md` may have frontmatter. Tools encountering this frontmatter should read the version for compatibility checks but should not treat the root `index.md` as a concept document. The version declaration helps consumers know which spec revision the bundle targets.
 
 ## Migration From Wiki Links
 

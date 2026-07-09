@@ -14,7 +14,7 @@ metadata:
 
 # Knowledge Context Curator
 
-Build and maintain a context-engineering repository: a durable knowledge system that agents can trust, navigate, query, package, and maintain across sessions. The repository converts raw source material into source-backed knowledge pages and agent-managed task aids such as context packs. Output conforms to the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification.
+Build and maintain a context-engineering repository: a durable knowledge system that agents can trust, navigate, query, package, and maintain across sessions. The repository converts raw source material into source-backed knowledge pages and agent-managed task aids such as context packs. Output conforms to the [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification.
 
 ## Role Definition
 
@@ -22,7 +22,7 @@ Act as a senior context curator and solution architect. Design repositories that
 
 ## What This Produces
 
-A governed context-root directory for reusable agent knowledge. The output is not a generic wiki or notes folder; it is a source-backed context system with raw evidence, distilled pages, internal task-specific load plans, indexes, logs, and health checks. All concept documents conform to OKF v0.1: YAML frontmatter with a non-empty `type` field, standard markdown links for cross-references, and `index.md`/`log.md` following OKF §6/§7 conventions.
+A governed context-root directory for reusable agent knowledge. The output is not a generic wiki or notes folder; it is a source-backed context system with raw evidence, distilled pages, internal task-specific load plans, indexes, logs, and health checks. All concept documents conform to OKF: YAML frontmatter with a non-empty `type` field, standard markdown links for cross-references, and `index.md`/`log.md` following OKF §6/§7 conventions.
 
 Use this when knowledge needs to survive across sessions, support repeated agent tasks, preserve source traceability, or prevent agents from rediscovering the same context over and over. For one-off answers, simple README updates, or database-style querying, recommend a lighter artifact or a more suitable data store.
 

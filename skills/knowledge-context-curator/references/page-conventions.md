@@ -2,7 +2,7 @@
 
 These are the default conventions for pages in a context repository. The repository's `SCHEMA.md` may override them.
 
-This repository conforms to the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification. All concept documents use standard markdown with YAML frontmatter.
+This repository conforms to the [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification. All concept documents use standard markdown with YAML frontmatter.
 
 Paths below use `context/` as the default root name. Substitute the actual root for the repository you are working in.
 

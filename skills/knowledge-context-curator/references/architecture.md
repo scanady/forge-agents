@@ -2,7 +2,7 @@
 
 This reference explains the repository model. Use it when designing, explaining, or revising a context-root repository.
 
-This repository conforms to the [Open Knowledge Format (OKF) v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification. OKF defines a minimal, vendor-neutral format for representing knowledge as a directory of markdown files with YAML frontmatter. This skill extends OKF with governance layers (schema, context packs, lint) while remaining fully conformant.
+This repository conforms to the [Open Knowledge Format (OKF)](https://github.com/GoogleCloudPlatform/knowledge-catalog) specification. OKF defines a minimal, vendor-neutral format for representing knowledge as a directory of markdown files with YAML frontmatter. This skill extends OKF with governance layers (schema, context packs, lint) while remaining fully conformant.
 
 Paths below use `context/` as the default root name for readability. The root is configurable, and a project may host several roots side by side (for example `context-core/`, `context-product/`, `context-customer/`). Substitute the actual root name where it applies.
 
