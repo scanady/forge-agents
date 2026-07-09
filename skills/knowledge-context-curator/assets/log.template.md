@@ -1,6 +1,6 @@
 # Context Log
 
-Chronological record of operations on the context repository, newest first. Each date heading uses `## YYYY-MM-DD` format. Entries use bold verbs to indicate the operation type.
+Chronological record of operations on the context repository, newest first. Each date heading uses ISO date format. Entries use bold verbs to indicate the operation type.
 
 Operations:
 

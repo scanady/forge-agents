@@ -60,7 +60,7 @@ okf_version: "0.1"
 ---
 ```
 
-This is the only case where `index.md` may have frontmatter.
+This is the only case where `index.md` may have frontmatter. Tools encountering this frontmatter should read the version for compatibility checks but should not treat the root `index.md` as a concept document. The version declaration helps consumers know which spec revision the bundle targets.
 
 ## Migration From Wiki Links
 
