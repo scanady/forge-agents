@@ -1,6 +1,6 @@
 {
   "catalog_version": "1.0.0",
-  "generated_at": "2026-07-16T04:27:31Z",
+  "generated_at": "2026-07-16T04:28:45Z",
   "sources": [
     {
       "id": "source-1",
@@ -18,7 +18,7 @@
     "avg_executability": 2.58,
     "avg_invocability": 1.97,
     "security_risk_distribution": {
-      "low": 95,
+      "low": 97,
       "medium": 27,
       "high": 2
     },
@@ -4416,8 +4416,8 @@
           "rationale": "Not evaluated"
         },
         "security_risk": {
-          "rating": "unknown",
-          "rationale": "Not evaluated",
+          "rating": "low",
+          "rationale": "No obvious credential handling or risky execution patterns detected.",
           "findings": []
         },
         "executability": {
@@ -4432,7 +4432,7 @@
           "flagged": false,
           "rationale": "Not evaluated"
         },
-        "core_capabilities": "Not evaluated",
+        "core_capabilities": "Structural software design review of an existing codebase using John Ousterhout's \"A Philosophy of Software Design\" as the diagnostic lens. Surfaces shallow modules, information leakage, special-case proliferation, naming obscurity, and inconsistency — then recommends the smallest design change that eliminates the most complexity. Use when asked to \"review module design\", \"is this over-abstracted\", \"are my modules too shallow\", \"audit complexity\", \"find pass-through layers\", or \"review software design quality\".",
         "external_requirements_indicator": "unknown",
         "external_requirements": [
           "unknown"
@@ -7623,8 +7623,8 @@
           "rationale": "Not evaluated"
         },
         "security_risk": {
-          "rating": "unknown",
-          "rationale": "Not evaluated",
+          "rating": "low",
+          "rationale": "No obvious credential handling or risky execution patterns detected.",
           "findings": []
         },
         "executability": {
@@ -7639,7 +7639,7 @@
           "flagged": false,
           "rationale": "Not evaluated"
         },
-        "core_capabilities": "Not evaluated",
+        "core_capabilities": "Audit, generate, and validate schema.org structured data (JSON-LD) and Google Search \"Appearance\" signals to make a site or page eligible for richer search results. Use when the user wants rich results / rich snippets, schema markup, JSON-LD, structured data, \"how do I get stars/breadcrumbs/sitelinks in Google\", a knowledge panel, a favicon or sitename in search, better title links or meta-description snippets, or markup for a specific entity: Article, Product, Review, Organization, Local business, Profile page (author/about/bio pages like a personal site), Person, Event, Job posting, Recipe, Video, Breadcrumb, FAQ/Q&A, Course, Dataset, Software app, Movie, and other Google-supported types. Also for \"why isn''t my structured data showing\", validating existing markup, or planning which structured data a page should have.",
         "external_requirements_indicator": "unknown",
         "external_requirements": [
           "unknown"
