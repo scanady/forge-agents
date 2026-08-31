@@ -342,6 +342,7 @@
         "compliance"
       ],
       "skills": [
+        "./skills/content-narrative-story-brief",
         "./skills/legal-compliance-regulatory-monitor",
         "./skills/strategy-change-management",
         "./skills/strategy-critical-reasoning",

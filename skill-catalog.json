@@ -1,6 +1,6 @@
 {
   "catalog_version": "1.0.0",
-  "generated_at": "2026-08-31T00:53:10Z",
+  "generated_at": "2026-08-31T00:54:07Z",
   "sources": [
     {
       "id": "source-1",
@@ -221,8 +221,9 @@
         "plugin_name": "nexus-strategy",
         "description": "Make hard calls and defend them — planning, decision frameworks, critical reasoning, change management, and executive communication. Choose a direction and bring people with you.",
         "version": "1.0.0",
-        "skill_count": 14,
+        "skill_count": 15,
         "skills": [
+          "content-narrative-story-brief",
           "legal-compliance-regulatory-monitor",
           "strategy-change-management",
           "strategy-critical-reasoning",
@@ -1623,7 +1624,8 @@
       "path": "content-narrative-story-brief/SKILL.md",
       "url": null,
       "plugins": [
-        "content"
+        "content",
+        "strategy"
       ],
       "frontmatter": {
         "name": "content-narrative-story-brief",
