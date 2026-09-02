@@ -27,7 +27,7 @@
         "agent-tools"
       ],
       "skills": [
-        "./skills/agents-copilot-instructions",
+        "./skills/engineering-agents-md-curator",
         "./skills/agents-design-persona-creator",
         "./skills/agents-design-visual-identity",
         "./skills/agents-skill-plugin-builder",
@@ -428,7 +428,7 @@
         "ai"
       ],
       "skills": [
-        "./skills/agents-copilot-instructions",
+        "./skills/engineering-agents-md-curator",
         "./skills/agents-design-persona-creator",
         "./skills/agents-design-visual-identity",
         "./skills/agents-skill-plugin-builder",

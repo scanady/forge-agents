@@ -1,6 +1,6 @@
 {
   "catalog_version": "1.0.0",
-  "generated_at": "2026-08-31T00:54:07Z",
+  "generated_at": "2026-09-02T01:19:53Z",
   "sources": [
     {
       "id": "source-1",
@@ -12,19 +12,19 @@
   ],
   "summary": {
     "total_skills": 146,
-    "evaluated": 114,
+    "evaluated": 113,
     "parse_errors": 0,
-    "avg_usage_value": 3.12,
-    "avg_executability": 2.23,
-    "avg_invocability": 1.7,
+    "avg_usage_value": 3.1,
+    "avg_executability": 2.21,
+    "avg_invocability": 1.68,
     "security_risk_distribution": {
       "low": 115,
       "medium": 29,
       "high": 2
     },
     "complexity_distribution": {
-      "compact": 73,
-      "detailed": 29,
+      "compact": 72,
+      "detailed": 30,
       "comprehensive": 44
     },
     "pattern_distribution": {
@@ -40,9 +40,9 @@
         "version": "1.0.0",
         "skill_count": 9,
         "skills": [
-          "agents-copilot-instructions",
           "agents-design-persona-creator",
           "agents-design-visual-identity",
+          "engineering-agents-md-curator",
           "agents-skill-plugin-builder",
           "agents-skill-spec-builder",
           "ai-prompt-engineer",
@@ -282,98 +282,6 @@
   },
   "skills": [
     {
-      "name": "agents-copilot-instructions",
-      "disable_model_invocation": true,
-      "source_id": "source-1",
-      "path": "agents-copilot-instructions/SKILL.md",
-      "url": null,
-      "plugins": [
-        "agent-tools"
-      ],
-      "frontmatter": {
-        "name": "agents-copilot-instructions",
-        "disable_model_invocation": true,
-        "description": "Create GitHub Copilot custom instructions files (.instructions.md and copilot-instructions.md) tailored to a repository, language, framework, platform, or concern. Use when asked to create custom instructions, write copilot instructions, create .instructions.md files, set up copilot-instructions.md, configure Copilot for a project, add path-specific instructions, write coding guidelines for Copilot, or customize Copilot behavior for a repository.",
-        "license": "MIT",
-        "compatibility": null,
-        "allowed_tools": null,
-        "metadata": {
-          "version": null,
-          "triggers": null,
-          "role": null,
-          "scope": null,
-          "output_format": null,
-          "related_skills": null
-        }
-      },
-      "structure": {
-        "has_scripts": false,
-        "has_references": true,
-        "has_agents": false,
-        "has_assets": false,
-        "has_license_file": false,
-        "file_count": 4,
-        "estimated_tokens": 767,
-        "complexity_class": "compact",
-        "skill_pattern": "A"
-      },
-      "evaluation": {
-        "name": "agents-copilot-instructions",
-        "usage_value": {
-          "score": 4,
-          "rationale": "Domain-specific skill with clear purpose.",
-          "sub_scores": {
-            "problem_clarity": 5,
-            "audience_breadth": 4,
-            "capability_gap": 4,
-            "actionability": 4,
-            "reusability": 3
-          },
-          "weighted_score": 4.15,
-          "domain_calibration_bonus": 0.3,
-          "method_version": "weighted-v2"
-        },
-        "security_risk": {
-          "rating": "low",
-          "rationale": "No obvious credential handling or risky execution patterns detected.",
-          "findings": [],
-          "sub_scores": {
-            "data_privacy": 5,
-            "prompt_injection": 5,
-            "illegal_content": 5,
-            "bias": 5,
-            "system_integrity": 5,
-            "untrusted_communication": 5
-          }
-        },
-        "executability": {
-          "score": 3,
-          "completeness": 4,
-          "determinism": 3,
-          "consistency": 4,
-          "usability": 4,
-          "rationale": "Workflow is well-structured with clear guidance."
-        },
-        "invocability": {
-          "score": 2,
-          "rationale": "Name and triggers clearly signal skill purpose."
-        },
-        "over_specification_risk": {
-          "flagged": false,
-          "rationale": "Provides generalizable patterns."
-        },
-        "core_capabilities": "Create GitHub Copilot custom instructions files (. instructions.",
-        "external_requirements_indicator": "self-contained",
-        "external_requirements": [
-          "none"
-        ],
-        "script_languages": [
-          "none"
-        ],
-        "license": "MIT"
-      }
-    },
-    {
       "name": "agents-design-persona-creator",
       "disable_model_invocation": true,
       "source_id": "source-1",
@@ -552,6 +460,75 @@
         "external_requirements_indicator": "has-external-dependencies",
         "external_requirements": [
           "none"
+        ],
+        "script_languages": [
+          "none"
+        ],
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "engineering-agents-md-curator",
+      "disable_model_invocation": true,
+      "source_id": "source-1",
+      "path": "engineering-agents-md-curator/SKILL.md",
+      "url": null,
+      "plugins": [
+        "agent-tools"
+      ],
+      "frontmatter": {
+        "name": "engineering-agents-md-curator",
+        "disable_model_invocation": true,
+        "description": "Curate a repository's AGENTS.md (the system-of-truth agent-instructions file) and, when needed, the Copilot per-file rules at .github/instructions/*.instructions.md that AGENTS.md points to. Use when asked to clean up an AGENTS.md, refine agent instructions, reorganize a messy AGENTS.md, lift content out of migrated blocks, standardize an AGENTS.md, add sections to an AGENTS.md, or write a path-specific .instructions.md file for Copilot.",
+        "license": "MIT",
+        "compatibility": null,
+        "allowed_tools": null,
+        "metadata": {
+          "version": "3.0.0",
+          "triggers": "refine agents.md, curate agents.md, clean up agents.md, reorganize agents.md, lift migrated content out of agents.md, standardize agents.md, add sections to agents.md, write path-specific instructions.md, add copilot per-file rules",
+          "role": "specialist",
+          "scope": "execution",
+          "output_format": "markdown-file",
+          "related_skills": null
+        }
+      },
+      "structure": {
+        "has_scripts": false,
+        "has_references": true,
+        "has_agents": false,
+        "has_assets": false,
+        "has_license_file": false,
+        "file_count": 5,
+        "estimated_tokens": 838,
+        "complexity_class": "detailed",
+        "skill_pattern": "A"
+      },
+      "evaluation": {
+        "usage_value": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "security_risk": {
+          "rating": "low",
+          "findings": [],
+          "rationale": "No obvious credential handling or risky execution patterns detected."
+        },
+        "executability": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "invocability": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "over_specification_risk": {
+          "flagged": false,
+          "rationale": "Not evaluated"
+        },
+        "core_capabilities": "Curate a repository's AGENTS.md (the system-of-truth agent-instructions file) and, when needed, the Copilot per-file rules at .github/instructions/*.instructions.md that AGENTS.md points to. Use when asked to clean up an AGENTS.md, refine agent instructions, reorganize a messy AGENTS.md, lift content out of migrated blocks, standardize an AGENTS.md, add sections to an AGENTS.md, or write a path-specific .instructions.md file for Copilot.",
+        "external_requirements_indicator": "unknown",
+        "external_requirements": [
+          "unknown"
         ],
         "script_languages": [
           "none"
