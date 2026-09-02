@@ -130,5 +130,6 @@ When creating a pull request, always:
 2. Review the branch diff (`git log <base>..HEAD --oneline` and `git diff --stat`) to understand what changed.
 3. Fill out every section of the template with real content — replace all placeholders, check applicable boxes, delete sections that don't apply.
 4. Never pass the raw template as the PR body; it must be populated before submission.
-5. If no template is found, write a clear description covering what changed, why, and how to verify.
+5. Validate the populated PR body before opening the PR: `node scripts/validation/check-pr-template.js /tmp/pr-body.md`
+6. If no template is found, write a clear description covering what changed, why, and how to verify.
 <!-- migrated:github-copilot-instructions-md:end -->
