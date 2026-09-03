@@ -1,6 +1,6 @@
 {
   "catalog_version": "1.0.0",
-  "generated_at": "2026-09-02T01:19:53Z",
+  "generated_at": "2026-09-03T03:10:51Z",
   "sources": [
     {
       "id": "source-1",
@@ -11,25 +11,25 @@
     }
   ],
   "summary": {
-    "total_skills": 146,
+    "total_skills": 147,
     "evaluated": 113,
     "parse_errors": 0,
-    "avg_usage_value": 3.1,
-    "avg_executability": 2.21,
-    "avg_invocability": 1.68,
+    "avg_usage_value": 3.07,
+    "avg_executability": 2.19,
+    "avg_invocability": 1.67,
     "security_risk_distribution": {
       "low": 115,
-      "medium": 29,
+      "medium": 30,
       "high": 2
     },
     "complexity_distribution": {
       "compact": 72,
       "detailed": 30,
-      "comprehensive": 44
+      "comprehensive": 45
     },
     "pattern_distribution": {
       "A": 128,
-      "B": 17,
+      "B": 18,
       "C": 1
     },
     "over_specification_flagged": 0,
@@ -42,10 +42,10 @@
         "skills": [
           "agents-design-persona-creator",
           "agents-design-visual-identity",
-          "engineering-agents-md-curator",
           "agents-skill-plugin-builder",
           "agents-skill-spec-builder",
           "ai-prompt-engineer",
+          "engineering-agents-md-curator",
           "knowledge-context-curator",
           "knowledge-context-session-handover",
           "knowledge-ops"
@@ -131,6 +131,21 @@
           "design-visual-image-system-director",
           "design-web-impactful",
           "personal-design-meeting-background"
+        ]
+      },
+      "dev": {
+        "plugin_name": "nexus-dev",
+        "description": "Software engineering and development workflows.",
+        "version": "1.0.0",
+        "skill_count": 7,
+        "skills": [
+          "engineering-dev-git-commit",
+          "engineering-dev-git-finish-branch",
+          "engineering-dev-git-start-branch",
+          "engineering-dev-git-workflow-design",
+          "engineering-github-ops",
+          "engineering-github-repo-standards",
+          "engineering-repo-scaffolder"
         ]
       },
       "marketing": {
@@ -460,75 +475,6 @@
         "external_requirements_indicator": "has-external-dependencies",
         "external_requirements": [
           "none"
-        ],
-        "script_languages": [
-          "none"
-        ],
-        "license": "MIT"
-      }
-    },
-    {
-      "name": "engineering-agents-md-curator",
-      "disable_model_invocation": true,
-      "source_id": "source-1",
-      "path": "engineering-agents-md-curator/SKILL.md",
-      "url": null,
-      "plugins": [
-        "agent-tools"
-      ],
-      "frontmatter": {
-        "name": "engineering-agents-md-curator",
-        "disable_model_invocation": true,
-        "description": "Curate a repository's AGENTS.md (the system-of-truth agent-instructions file) and, when needed, the Copilot per-file rules at .github/instructions/*.instructions.md that AGENTS.md points to. Use when asked to clean up an AGENTS.md, refine agent instructions, reorganize a messy AGENTS.md, lift content out of migrated blocks, standardize an AGENTS.md, add sections to an AGENTS.md, or write a path-specific .instructions.md file for Copilot.",
-        "license": "MIT",
-        "compatibility": null,
-        "allowed_tools": null,
-        "metadata": {
-          "version": "3.0.0",
-          "triggers": "refine agents.md, curate agents.md, clean up agents.md, reorganize agents.md, lift migrated content out of agents.md, standardize agents.md, add sections to agents.md, write path-specific instructions.md, add copilot per-file rules",
-          "role": "specialist",
-          "scope": "execution",
-          "output_format": "markdown-file",
-          "related_skills": null
-        }
-      },
-      "structure": {
-        "has_scripts": false,
-        "has_references": true,
-        "has_agents": false,
-        "has_assets": false,
-        "has_license_file": false,
-        "file_count": 5,
-        "estimated_tokens": 838,
-        "complexity_class": "detailed",
-        "skill_pattern": "A"
-      },
-      "evaluation": {
-        "usage_value": {
-          "score": 0,
-          "rationale": "Not evaluated"
-        },
-        "security_risk": {
-          "rating": "low",
-          "findings": [],
-          "rationale": "No obvious credential handling or risky execution patterns detected."
-        },
-        "executability": {
-          "score": 0,
-          "rationale": "Not evaluated"
-        },
-        "invocability": {
-          "score": 0,
-          "rationale": "Not evaluated"
-        },
-        "over_specification_risk": {
-          "flagged": false,
-          "rationale": "Not evaluated"
-        },
-        "core_capabilities": "Curate a repository's AGENTS.md (the system-of-truth agent-instructions file) and, when needed, the Copilot per-file rules at .github/instructions/*.instructions.md that AGENTS.md points to. Use when asked to clean up an AGENTS.md, refine agent instructions, reorganize a messy AGENTS.md, lift content out of migrated blocks, standardize an AGENTS.md, add sections to an AGENTS.md, or write a path-specific .instructions.md file for Copilot.",
-        "external_requirements_indicator": "unknown",
-        "external_requirements": [
-          "unknown"
         ],
         "script_languages": [
           "none"
@@ -5132,6 +5078,75 @@
       }
     },
     {
+      "name": "engineering-agents-md-curator",
+      "disable_model_invocation": true,
+      "source_id": "source-1",
+      "path": "engineering-agents-md-curator/SKILL.md",
+      "url": null,
+      "plugins": [
+        "agent-tools"
+      ],
+      "frontmatter": {
+        "name": "engineering-agents-md-curator",
+        "disable_model_invocation": true,
+        "description": "Curate a repository's AGENTS.md (the system-of-truth agent-instructions file) and, when needed, the Copilot per-file rules at .github/instructions/*.instructions.md that AGENTS.md points to. Use when asked to clean up an AGENTS.md, refine agent instructions, reorganize a messy AGENTS.md, lift content out of migrated blocks, standardize an AGENTS.md, add sections to an AGENTS.md, or write a path-specific .instructions.md file for Copilot.",
+        "license": "MIT",
+        "compatibility": null,
+        "allowed_tools": null,
+        "metadata": {
+          "version": "3.0.0",
+          "triggers": "refine agents.md, curate agents.md, clean up agents.md, reorganize agents.md, lift migrated content out of agents.md, standardize agents.md, add sections to agents.md, write path-specific instructions.md, add copilot per-file rules",
+          "role": "specialist",
+          "scope": "execution",
+          "output_format": "markdown-file",
+          "related_skills": null
+        }
+      },
+      "structure": {
+        "has_scripts": false,
+        "has_references": true,
+        "has_agents": false,
+        "has_assets": false,
+        "has_license_file": false,
+        "file_count": 5,
+        "estimated_tokens": 838,
+        "complexity_class": "detailed",
+        "skill_pattern": "A"
+      },
+      "evaluation": {
+        "usage_value": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "security_risk": {
+          "rating": "low",
+          "findings": [],
+          "rationale": "No obvious credential handling or risky execution patterns detected."
+        },
+        "executability": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "invocability": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "over_specification_risk": {
+          "flagged": false,
+          "rationale": "Not evaluated"
+        },
+        "core_capabilities": "Curate a repository's AGENTS.md (the system-of-truth agent-instructions file) and, when needed, the Copilot per-file rules at .github/instructions/*.instructions.md that AGENTS.md points to. Use when asked to clean up an AGENTS.md, refine agent instructions, reorganize a messy AGENTS.md, lift content out of migrated blocks, standardize an AGENTS.md, add sections to an AGENTS.md, or write a path-specific .instructions.md file for Copilot.",
+        "external_requirements_indicator": "unknown",
+        "external_requirements": [
+          "unknown"
+        ],
+        "script_languages": [
+          "none"
+        ],
+        "license": "MIT"
+      }
+    },
+    {
       "name": "engineering-api-mcp-builder",
       "disable_model_invocation": false,
       "source_id": "source-1",
@@ -5929,6 +5944,7 @@
       "path": "engineering-dev-git-commit/SKILL.md",
       "url": null,
       "plugins": [
+        "dev",
         "tech"
       ],
       "frontmatter": {
@@ -6021,6 +6037,7 @@
       "path": "engineering-dev-git-finish-branch/SKILL.md",
       "url": null,
       "plugins": [
+        "dev",
         "tech"
       ],
       "frontmatter": {
@@ -6113,6 +6130,7 @@
       "path": "engineering-dev-git-start-branch/SKILL.md",
       "url": null,
       "plugins": [
+        "dev",
         "tech"
       ],
       "frontmatter": {
@@ -6192,6 +6210,7 @@
       "path": "engineering-dev-git-workflow-design/SKILL.md",
       "url": null,
       "plugins": [
+        "dev",
         "tech"
       ],
       "frontmatter": {
@@ -6455,6 +6474,7 @@
       "path": "engineering-github-ops/SKILL.md",
       "url": null,
       "plugins": [
+        "dev",
         "tech"
       ],
       "frontmatter": {
@@ -6549,6 +6569,7 @@
       "path": "engineering-github-repo-standards/SKILL.md",
       "url": null,
       "plugins": [
+        "dev",
         "tech"
       ],
       "frontmatter": {
@@ -7151,6 +7172,79 @@
           "none"
         ],
         "license": "unspecified"
+      }
+    },
+    {
+      "name": "engineering-repo-scaffolder",
+      "disable_model_invocation": false,
+      "source_id": "source-1",
+      "path": "engineering-repo-scaffolder/SKILL.md",
+      "url": null,
+      "plugins": [
+        "dev"
+      ],
+      "frontmatter": {
+        "name": "engineering-repo-scaffolder",
+        "disable_model_invocation": false,
+        "description": "Engineering repository scaffolding and alignment skill for minimal starter shells, structure audits, and existing-project migrations. Use when a user wants a new repo baseline, a repository brought back to standard, or a reorganization plan for docs, automation, source, and agent assets.",
+        "license": "MIT",
+        "compatibility": null,
+        "allowed_tools": null,
+        "metadata": {
+          "version": "2.6.0",
+          "triggers": "create starter shell, bootstrap project structure, apply project structure, align existing repository, audit repository layout, migrate repo to standard, reorganize repository, update scaffold artifacts",
+          "role": "repo-scaffolder",
+          "scope": "design",
+          "output_format": "plan",
+          "related_skills": "skill-architect"
+        }
+      },
+      "structure": {
+        "has_scripts": true,
+        "has_references": true,
+        "has_agents": false,
+        "has_assets": true,
+        "has_license_file": false,
+        "file_count": 27,
+        "estimated_tokens": 4399,
+        "complexity_class": "comprehensive",
+        "skill_pattern": "B"
+      },
+      "evaluation": {
+        "usage_value": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "security_risk": {
+          "rating": "medium",
+          "findings": [
+            "References credentials/secrets",
+            "Uses install commands"
+          ],
+          "rationale": "Evaluated from scanner signals."
+        },
+        "executability": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "invocability": {
+          "score": 0,
+          "rationale": "Not evaluated"
+        },
+        "over_specification_risk": {
+          "flagged": false,
+          "rationale": "Not evaluated"
+        },
+        "core_capabilities": "Engineering repository scaffolding and alignment skill for minimal starter shells, structure audits, and existing-project migrations. Use when a user wants a new repo baseline, a repository brought back to standard, or a reorganization plan for docs, automation, source, and agent assets.",
+        "external_requirements_indicator": "unknown",
+        "external_requirements": [
+          "unknown"
+        ],
+        "script_languages": [
+          "bash",
+          "powershell"
+        ],
+        "license": "MIT"
       }
     },
     {
