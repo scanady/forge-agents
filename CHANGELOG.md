@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/scanady/nexus-skills/compare/nexus-agents-v1.3.0...nexus-agents-v1.3.1) (2026-09-05)
+
+
+### Bug Fixes
+
+* use stable Gemini image fallback ([#51](https://github.com/scanady/nexus-skills/issues/51)) ([e22bc5f](https://github.com/scanady/nexus-skills/commit/e22bc5f720b2edc8e79578f3262cc9d0a0e83ee2))
+
 ## [1.3.0](https://github.com/scanady/nexus-skills/compare/nexus-agents-v1.2.0...nexus-agents-v1.3.0) (2026-09-03)
 
 
